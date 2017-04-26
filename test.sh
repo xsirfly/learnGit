@@ -10,7 +10,7 @@ get_git_status () {
         git_status='magenta'
     elif [[ $status_message =~ "Your branch is ahead of" ]]; then
         git_status='blue'
-    elif [[ $status_message =~ "nothing to commit, working directory clean" ]]; then
+    elif [[ $status_message =~ "nothing to commit, working tree clean" ]]; then
         git_status='black'
     else
         git_status='yellow'
